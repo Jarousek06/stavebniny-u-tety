@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stavebniny U Tety – Litoměřice | stavební materiál, barvy, nářadí</title>
+<meta name="description" content="Stavebniny U Tety, Plešivecká 56, Litoměřice. Stavební materiál, dřevo, železo, izolace, fasády, barvy Caparol, nářadí Bosch, pracovní oděvy. Rozvoz, půjčovna, míchání barev. Tel. 602 636 388.">
+<meta name="theme-color" content="#1c1b19">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ffc20e'/%3E%3Cpath d='M10 34 32 14l22 20h-7v16H17V34z' fill='%231c1b19'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+<!-- Horní lišta: stav otevření -->
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <span class="status" id="status"><span class="dot"></span><span id="status-text">Po–Pá 6:30–17:00 · So 7:00–12:00 · Ne zavřeno</span></span>
+    <a class="topbar-tel" href="tel:+420602636388">📞 602 636 388</a>
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap header-in">
+    <a class="logo" href="#" aria-label="Stavebniny U Tety – úvod">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#ffc20e"/><path d="M10 34 32 14l22 20h-7v16H17V34z" fill="#1c1b19"/><rect x="28" y="36" width="8" height="14" fill="#ffc20e"/></svg>
+      <span><b>Stavebniny</b><em>U Tety</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Hlavní menu">
+      <a href="#sortiment">Sortiment</a>
+      <a href="#sluzby">Služby</a>
+      <a href="#oteviraci-doba">Otevírací doba</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="btn btn-yellow header-call" href="tel:+420602636388">Zavolat</a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">
+      <span class="bars" aria-hidden="true"></span><span>Menu</span>
+    </button>
+  </div>
+</header>
+
+<main id="obsah">
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-bg" src="img/hero2.jpg" alt="" fetchpriority="high">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="eyebrow">Stavebniny Litoměřice · Plešivecká 56</p>
+      <h1>Všechno pro vaši stavbu, dům, chalupu, chatu a řemeslo.</h1>
+      <p class="lead">Stavební materiál, dřevo, železo, izolace, barvy, nářadí i pracovní oblečení. Poradíme, namícháme barvu a materiál vám přivezeme.</p>
+      <div class="hero-btns">
+        <a class="btn btn-yellow btn-xl" href="tel:+420602636388">📞 Zavolat 602 636 388</a>
+        <a class="btn btn-white btn-xl" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.543724,14.119978" target="_blank" rel="noopener">📍 Navigovat k nám</a>
+      </div>
+      <a class="rating" href="https://www.google.com/maps/search/?api=1&amp;query=STAVEBNINY+U+TETY+Litom%C4%9B%C5%99ice" target="_blank" rel="noopener">
+        <span class="stars" aria-hidden="true">★★★★★</span> <b>4,6</b> z 5 · 90 recenzí na Googlu
+      </a>
+    </div>
+
+    <aside class="today" aria-label="Otevřeno dnes">
+      <p class="today-label">Dnes</p>
+      <p class="today-hours" id="today-hours">Po–Pá 6:30–17:00</p>
+      <p class="today-note" id="today-note">So 7:00–12:00 · Ne zavřeno</p>
+      <div class="today-alert" id="today-alert" hidden></div>
+      <a class="today-link" href="#oteviraci-doba">Celá otevírací doba a svátky →</a>
+    </aside>
+  </div>
+</section>
+
+<!-- Upozornění -->
+<div class="notice">
+  <div class="wrap notice-in">
+    <span class="notice-ico" aria-hidden="true">!</span>
+    <p><b>V neděli máme zavřeno.</b> Těšíme se na vás od pondělí do soboty.</p>
+  </div>
+</div>
+
+<!-- Rychlé volby -->
+<section class="quick wrap" aria-label="Co potřebujete?">
+  <h2 class="quick-title">Co potřebujete?</h2>
+  <div class="quick-grid">
+    <a class="quick-card" href="#sortiment"><span aria-hidden="true">🧱</span><b>Koupit materiál</b><small>Co máme v nabídce</small></a>
+    <a class="quick-card" href="#sluzby"><span aria-hidden="true">🚚</span><b>Přivézt materiál</b><small>Rozvoz až na stavbu</small></a>
+    <a class="quick-card" href="#pujcovna"><span aria-hidden="true">🔨</span><b>Půjčit stroj</b><small>Kladiva, míchačka, vozík</small></a>
+    <a class="quick-card" href="#barvy"><span aria-hidden="true">🎨</span><b>Namíchat barvu</b><small>Caparol na počkání</small></a>
+  </div>
+</section>
+
+<!-- SORTIMENT -->
+<section class="section" id="sortiment">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow dark">Sortiment</p>
+      <h2>Co u nás koupíte</h2>
+      <p class="sec-lead">Téměř všechno máme <b>skladem</b>. Co nemáme, rádi pro vás objednáme a dodáme co nejdřív. Nevíte si rady? Zavolejte, poradíme.</p>
+    </div>
+
+    <div class="cats">
+      <article class="cat">
+        <img src="img/cihly2.jpg" alt="Cihly naskládané na paletě" loading="lazy">
+        <div class="cat-body">
+          <h3>Stavební materiál</h3>
+          <ul>
+            <li>materiál pro hrubou stavbu i rekonstrukci</li>
+            <li>cihly, tvárnice, betonové výrobky</li>
+            <li>maltové směsi, lepidla, omítky</li>
+            <li>kanalizace, drenáže, hadice</li>
+            <li>oplocení, zemní vruty, stavební chemie</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cat">
+        <img src="img/izolace.jpg" alt="Izolace a konstrukce stropu" loading="lazy">
+        <div class="cat-body">
+          <h3>Fasády a zateplení</h3>
+          <ul>
+            <li>kompletní zateplovací systémy</li>
+            <li>fasádní i podlahový polystyren, XPS</li>
+            <li>stěrky, lepidla, armovací sítě</li>
+            <li>okenní lišty, rohy, parapety</li>
+            <li>suchá výstavba: sádrokarton, RIGIDUR</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cat">
+        <img src="img/drevo2.jpg" alt="Stoh dřevěných prken" loading="lazy">
+        <div class="cat-body">
+          <h3>Řezivo a OSB desky</h3>
+          <ul>
+            <li>střešní latě</li>
+            <li>tříděná i netříděná prkna</li>
+            <li>trámy a hranoly</li>
+            <li>OSB desky skladem (2500 × 625 mm)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cat">
+        <img src="img/zelezo.jpg" alt="Svazky stavební oceli" loading="lazy">
+        <div class="cat-body">
+          <h3>Stavební železo</h3>
+          <ul>
+            <li>kari sítě, roxory</li>
+            <li>ocelové profily</li>
+            <li>vázací a armovací dráty</li>
+            <li>pásovina, hlazenka, nerez a závitové tyče</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cat" id="barvy">
+        <img src="img/barvy.jpg" alt="Plechovky s barvami a štětce" loading="lazy">
+        <div class="cat-body">
+          <h3>Barvy, laky, lazury</h3>
+          <ul>
+            <li><b>míchací centrum CAPAROL</b> – odstín na počkání</li>
+            <li>fasádní barvy a omítky, penetrace</li>
+            <li>interiérové barvy</li>
+            <li>laky, lazury a speciální nátěry</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cat">
+        <img src="img/naradi2.jpg" alt="Aku vrtačka, kladivo a nářadí na dřevě" loading="lazy">
+        <div class="cat-body">
+          <h3>Nářadí a elektronářadí</h3>
+          <ul>
+            <li><b>BOSCH</b> – prodej i servis</li>
+            <li><b>FISKARS</b> a <b>ZBIROVIA</b></li>
+            <li>aku šroubováky, vrtačky, okružní pily</li>
+            <li>řezačky na dlažbu, žebříky, lešení</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cat">
+        <img src="img/sroubky.jpg" alt="Šrouby a vruty" loading="lazy">
+        <div class="cat-body">
+          <h3>Spojovací materiál</h3>
+          <ul>
+            <li>kompletní sortiment šroubů a vrutů</li>
+            <li>chemické kotvy FISCHER</li>
+            <li>lana, provazy</li>
+            <li>lepidla, tmely, pěny, pásky, fólie</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cat">
+        <img src="img/odevy.jpg" alt="Ochranné helmy a reflexní vesty" loading="lazy">
+        <div class="cat-body">
+          <h3>Pracovní oděvy a obuv</h3>
+          <ul>
+            <li>pracovní oblečení (i zimní, skladem)</li>
+            <li>pracovní obuv</li>
+            <li>rukavice, helmy, brýle</li>
+            <li>další ochranné pomůcky</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cat">
+        <img src="img/kominy.jpg" alt="Cihlový komín na střeše" loading="lazy">
+        <div class="cat-body">
+          <h3>Komíny</h3>
+          <ul>
+            <li>komínové systémy SCHIEDEL</li>
+            <li>komínové vložky</li>
+            <li>izolace a doplňky</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="cta-strip">
+      <p><b>Hledáte něco, co tu není?</b> Zeptejte se. Máme mnohem víc, než se sem vejde.</p>
+      <a class="btn btn-dark btn-lg" href="tel:+420602636388">📞 602 636 388</a>
+    </div>
+  </div>
+</section>
+
+<!-- SLUŽBY -->
+<section class="section section-dark" id="sluzby">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Služby</p>
+      <h2>Nejen prodáváme</h2>
+    </div>
+
+    <div class="services">
+      <article class="service service-big">
+        <img src="img/dodavka.jpg" alt="Nákladní auto s hydraulickou rukou" loading="lazy">
+        <div class="service-body">
+          <span class="service-num">01</span>
+          <h3>Rozvoz materiálu</h3>
+          <p>Nakoupený materiál vám přivezeme až na místo.</p>
+          <ul class="facts">
+            <li><b>6 t</b> nákladní auto s hydraulickou rukou</li>
+            <li><b>1,5 t</b> dodávky s plachtou</li>
+          </ul>
+          <p class="small">Potřebujete jiný druh dopravy? Domluvíme se.</p>
+        </div>
+      </article>
+
+      <article class="service" id="pujcovna">
+        <img src="img/mixer.jpg" alt="Stavební míchačka" loading="lazy">
+        <div class="service-body">
+          <span class="service-num">02</span>
+          <h3>Půjčovna strojů</h3>
+          <ul class="list">
+            <li>vrtací a bourací kladiva HILTI</li>
+            <li>stavební míchačka</li>
+            <li>přívěsný vozík</li>
+            <li>kolečkové pojízdné lešení</li>
+          </ul>
+          <p class="small">Zda je stroj volný, zjistíte na <a href="tel:+420602636388">602 636 388</a>.</p>
+        </div>
+      </article>
+
+      <article class="service">
+        <img src="img/valecky.jpg" alt="Barevné malířské válečky" loading="lazy">
+        <div class="service-body">
+          <span class="service-num">03</span>
+          <h3>Míchání barev</h3>
+          <p>V míchacím centru <b>CAPAROL</b> vám na počkání namícháme odstín fasádní barvy, omítky i interiérové barvy.</p>
+        </div>
+      </article>
+
+      <article class="service">
+        <img src="img/naradi.jpg" alt="Aku vrtačka" loading="lazy">
+        <div class="service-body">
+          <span class="service-num">04</span>
+          <h3>Servis nářadí</h3>
+          <p>Nářadí koupené u nás také opravíme a zajistíme servis.</p>
+        </div>
+      </article>
+
+      <article class="service">
+        <img src="img/stavba.jpg" alt="Rozestavěný dům" loading="lazy">
+        <div class="service-body">
+          <span class="service-num">05</span>
+          <h3>Poradenství</h3>
+          <p>Poradíme s výběrem materiálu i s postupem práce. Zajistíme odborný dozor.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ZNAČKY -->
+<section class="section section-soft" id="znacky">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow dark">Značky</p>
+      <h2>Prodáváme ověřené značky</h2>
+    </div>
+    <div class="brands">
+      <div class="brand-group"><h3>Maltové směsi</h3><p>Sakret · Hasit · Lafarge · Mapei · Knauf</p></div>
+      <div class="brand-group"><h3>Betonové výrobky</h3><p>CS Beton · KB Blok · Best</p></div>
+      <div class="brand-group"><h3>Cihly a tvárnice</h3><p>Ytong · Heluz · Porfix · Klinker Centrum · Cihelna Nebužely</p></div>
+      <div class="brand-group"><h3>Suchá výstavba a izolace</h3><p>Rigips · Ursa · Isover · Rockwool · Knauf Insulation</p></div>
+      <div class="brand-group"><h3>Barvy a fasády</h3><p>Caparol · Weber · Baumit · BASF</p></div>
+      <div class="brand-group"><h3>Komíny, tmely, nářadí</h3><p>Schiedel · Tremco illbruck · Den Braven · Bosch · Fiskars · Hilti</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OTEVÍRACÍ DOBA -->
+<section class="section" id="oteviraci-doba">
+  <div class="wrap hours-grid">
+    <div>
+      <p class="eyebrow dark">Otevírací doba</p>
+      <h2>Kdy máme otevřeno</h2>
+      <table class="hours" id="hours">
+        <tbody>
+          <tr data-days="1,2,3,4,5"><th>Pondělí – Pátek</th><td>6:30 – 17:00</td></tr>
+          <tr data-days="6"><th>Sobota</th><td>7:00 – 12:00</td></tr>
+          <tr data-days="0" class="closed"><th>Neděle</th><td>ZAVŘENO</td></tr>
+        </tbody>
+      </table>
+      <p class="small muted">Dodavatelé: vykládka zboží v pracovní dny 7:00–16:00, jindy jen po domluvě.</p>
+    </div>
+
+    <div>
+      <h3 class="h3-line">Svátky 2026</h3>
+      <ul class="holidays" id="holidays">
+        <!-- doplní se ze skriptu, níže je záloha bez JS -->
+        <li><span>1. 1. (čt)</span><b class="h-closed">zavřeno</b></li>
+        <li><span>3. 4. (pá) Velký pátek</span><b class="h-open">7:00 – 12:00</b></li>
+        <li><span>6. 4. (po) Velikonoční pondělí</span><b class="h-closed">zavřeno</b></li>
+        <li><span>1. 5. (pá)</span><b class="h-open">7:00 – 12:00</b></li>
+        <li><span>8. 5. (pá)</span><b class="h-closed">zavřeno</b></li>
+        <li><span>6. 7. (po)</span><b class="h-open">7:00 – 12:00</b></li>
+        <li><span>28. 9. (po)</span><b class="h-closed">zavřeno</b></li>
+        <li><span>28. 10. (st)</span><b class="h-closed">zavřeno</b></li>
+        <li><span>17. 11. (út)</span><b class="h-open">7:00 – 12:00</b></li>
+        <li><span>24. – 26. 12.</span><b class="h-closed">zavřeno</b></li>
+        <li><span>31. 12. (čt)</span><b class="h-closed">zavřeno</b></li>
+        <li><span>1. 1. 2027 (pá)</span><b class="h-closed">zavřeno</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- RECENZE -->
+<section class="section section-soft" id="recenze">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow dark">Recenze</p>
+      <h2>Co o nás říkají zákazníci</h2>
+      <p class="sec-lead"><span class="stars" aria-hidden="true">★★★★★</span> <b>4,6 z 5</b> podle 90 hodnocení na Googlu</p>
+    </div>
+    <div class="reviews">
+      <blockquote class="review"><p>„Vždy příjemná obsluha, co umí poradit. Dobrá nabídka barev a příslušenství.“</p><footer>Ondřej L.</footer></blockquote>
+      <blockquote class="review"><p>„U tety – to je prostě místo, kde seženu všechno za super ceny. Poradí, pokecáme, nakoupím…“</p><footer>Lukas W.</footer></blockquote>
+      <blockquote class="review"><p>„I po letech skvělá obsluha, bezva ceny a rychlost dodání spárovačky parádní. S radostí se vrátím.“</p><footer>Honza M.</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="section section-dark" id="kontakt">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Kontakt</p>
+      <h2>Zavolejte nebo se zastavte</h2>
+
+      <div class="phones">
+        <a class="phone" href="tel:+420602636388"><small>Prodejna</small><b>602 636 388</b></a>
+        <a class="phone" href="tel:+420723286748"><small>Vedoucí</small><b>723 286 748</b></a>
+        <a class="phone" href="tel:+420777286748"><small>Sklad</small><b>777 286 748</b></a>
+      </div>
+
+      <dl class="contact-list">
+        <div><dt>E-mail</dt><dd><a href="mailto:stavebninyutety@seznam.cz">stavebninyutety@seznam.cz</a></dd></div>
+        <div><dt>Adresa</dt><dd>Plešivecká 56, 412 01 Litoměřice</dd></div>
+        <div><dt>Firma</dt><dd>STAVEBNINY U TETY spol. s r.o.</dd></div>
+      </dl>
+
+      <a class="btn btn-yellow btn-xl" href="https://www.google.com/maps/dir/?api=1&amp;destination=50.543724,14.119978" target="_blank" rel="noopener">📍 Navigovat k nám</a>
+    </div>
+
+    <div class="map">
+      <iframe title="Mapa – Stavebniny U Tety, Plešivecká 56, Litoměřice" src="https://www.google.com/maps?q=50.543724,14.119978&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <p><b>STAVEBNINY U TETY spol. s r.o.</b> · Plešivecká 56, 412 01 Litoměřice</p>
+    <p>Váš dodavatel materiálu, nářadí a vybavení.</p>
+    <p class="muted">© <span id="year">2026</span> · Ilustrační fotografie: Unsplash</p>
+  </div>
+</footer>
+
+<!-- Spodní lišta pro mobil -->
+<nav class="bottombar" aria-label="Rychlé akce">
+  <a href="tel:+420602636388"><span aria-hidden="true">📞</span>Zavolat</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=50.543724,14.119978" target="_blank" rel="noopener"><span aria-hidden="true">📍</span>Navigovat</a>
+  <a href="#oteviraci-doba"><span aria-hidden="true">🕒</span>Otevřeno?</a>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>
